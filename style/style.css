@@ -2,6 +2,14 @@
     margin-top: 20px;
 }
 
+.posts-index .list-group{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+.posts-index .list-group a{
+    border: 1px solid #EBEBEB;
+}
+
 .posts-index .btn{
     margin-bottom: 20px;
 }
