@@ -67,6 +67,10 @@ function validate(values) {
         errors.title = '请输入标题';
     }
 
+    if (!values.categories) {
+        errors.categories = '请输入分类';
+    }
+
     return errors;
 }
 
