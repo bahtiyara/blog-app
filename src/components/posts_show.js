@@ -16,6 +16,10 @@ class PostsShow extends Component {
         if (!post) {
             return <div>正在加载...</div>;
         }
+
+        // let text = post.content;
+        // text = text.replace(/\n\r?/g, '<br />');
+
         return <div className='posts-show'>
             <div className='container'>
                 <button onClick={this.deletePost.bind(this)}>删除帖子</button>

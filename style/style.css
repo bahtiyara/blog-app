@@ -1,5 +1,6 @@
 .container{
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .posts-index .list-group{
@@ -76,4 +77,5 @@
     font-size: 16px;
     color: #383838;
     line-height: 24px;
+    white-space: pre-line;
 }
