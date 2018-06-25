@@ -3,6 +3,7 @@ import {Field, reduxForm} from 'redux-form';
 import {Link} from 'react-router-dom';
 import {createPost} from '../actions';
 import {connect} from 'react-redux';
+import TextareaAutosize from 'react-autosize-textarea';
 
 class PostsNew extends Component {
     render() {
@@ -51,10 +52,11 @@ class PostsNew extends Component {
     renderTextarea(field) {
         return <div className='form-group' >
             <label>{field.lable}</label>
-            <textarea
-                rows='5'
+            <TextareaAutosize
+                rows={5}
                 className='form-control'
                 {...field.input}
+                onResize={(e) => {}}
             />
         </div>;
     }
